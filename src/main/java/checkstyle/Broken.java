@@ -1,10 +1,10 @@
-package Checkstyle;
+package checkstyle;
 
 public class Broken {
     private int sizeOfEmpty = 10;
     public String surname;
     private String name;
-    public static final String newValue = " ";
+    public static final String newValue = "A";
 
     void broken() {
     }
@@ -18,7 +18,7 @@ public class Broken {
         }
     }
 
-    public void method(int a, int b, int c, int d, int e, int f, int g, int h) {
+    public void method(int a, int b, int c, int d, int e, int f) {
 
     }
 
