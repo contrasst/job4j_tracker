@@ -2,11 +2,11 @@ package checkstyle;
 
 public class Broken {
     private int sizeOfEmpty = 10;
-    public String surname;
+    private String surname;
     private String name;
     public static final String NEWVALUE = "Broken";
 
-    void broken() {
+    void Broken() {
     }
 
     public void echo() {
