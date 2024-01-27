@@ -16,6 +16,7 @@ public class Computer {
         System.out.println("Много мониторов: " + multiMonitor);
         System.out.println("SSD: " + ssd + "GB");
         System.out.println("Модель CPU: " + cpu);
+        System.out.println();
     }
 
     public static void main(String[] args) {
