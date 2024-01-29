@@ -7,7 +7,6 @@ public class Battery {
         this.load = load;
     }
 
-
     public String about() {
         return "My charge: " + load + "%";
     }
