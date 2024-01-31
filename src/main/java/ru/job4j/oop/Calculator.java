@@ -15,8 +15,12 @@ public class Calculator {
         return b / x;
     }
 
+    public int multiply(int r) {
+        return r * x;
+    }
+
     public  int sumAllOperation(int c) {
-        return sum(c) + divide(c) + minus(c);
+        return sum(c) + divide(c) + minus(c) + multiply(c);
     }
 
     public static void main(String[] args) {
