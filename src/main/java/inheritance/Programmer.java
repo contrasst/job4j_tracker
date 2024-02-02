@@ -6,4 +6,4 @@ public class Programmer extends Profession {
     public Programmer(boolean degree) {
         super(degree);
     }
-}
+ }
