@@ -10,4 +10,4 @@ public class JSONReport extends TextReport {
                 + System.lineSeparator()
                 + "}";
     }
-}
+ }
