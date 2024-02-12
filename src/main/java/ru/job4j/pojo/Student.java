@@ -25,7 +25,7 @@ public class Student {
         return fullName;
     }
 
-    public void setfIO(String fullName) {
+    public void setFullName(String fullName) {
         this.fullName = fullName;
     }
- }
+}
