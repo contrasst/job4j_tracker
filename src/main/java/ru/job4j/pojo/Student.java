@@ -1,7 +1,7 @@
 package ru.job4j.pojo;
 
 public class Student {
-    private String fIO;
+    private String fullName;
     private String dataJoin;
     private int group;
 
@@ -21,11 +21,11 @@ public class Student {
         this.dataJoin = dataJoin;
     }
 
-    public String getfIO() {
-        return fIO;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setfIO(String fIO) {
-        this.fIO = fIO;
+    public void setfIO(String fullName) {
+        this.fullName = fullName;
     }
 }

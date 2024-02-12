@@ -6,5 +6,8 @@ public class College {
         student.setDataJoin("22.07.2006");
         student.setGroup(2);
         student.setfIO("Sidorov Ivan Genadievych");
+        System.out.println("Full name: " + student.getFullName());
+        System.out.println("Group: " + student.getGroup());
+        System.out.println("Data join: " + student.getDataJoin());
     }
 }
