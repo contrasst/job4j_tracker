@@ -57,4 +57,4 @@ public class License {
     public int hashCode() {
         return Objects.hash(owner, model, code, created);
     }
-}
+ }
