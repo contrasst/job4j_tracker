@@ -5,7 +5,7 @@ public class College {
         Student student = new Student();
         student.setDataJoin("22.07.2006");
         student.setGroup(2);
-        student.setfIO("Sidorov Ivan Genadievych");
+        student.setFullName("Sidorov Ivan Genadievych");
         System.out.println("Full name: " + student.getFullName());
         System.out.println("Group: " + student.getGroup());
         System.out.println("Data join: " + student.getDataJoin());
