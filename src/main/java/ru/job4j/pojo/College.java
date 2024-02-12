@@ -10,4 +10,4 @@ public class College {
         System.out.println("Group: " + student.getGroup());
         System.out.println("Data join: " + student.getDataJoin());
     }
-}
+ }
