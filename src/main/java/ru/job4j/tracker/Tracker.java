@@ -54,7 +54,7 @@ public class Tracker {
             items[index] = item;
         }
         return result;
-    }
+     }
 
     public void delete(int id) {
         int index = indexOf(id);
@@ -64,7 +64,7 @@ public class Tracker {
             items[size - 1] = null;
             size--;
         }
-    }
+     }
 }
 
 
