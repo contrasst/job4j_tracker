@@ -51,7 +51,6 @@ public class StartUI {
         }
     }
 
-
     private void showMenu() {
         String[] menu = {
                 "Добавить новую заявку", "Показать все заявки", "Изменить заявку",
