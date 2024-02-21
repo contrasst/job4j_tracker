@@ -27,6 +27,17 @@ public class StartUI {
             } else {
                 System.out.println("Хранилище еще не содержит заявок");
             }
+            System.out.println("=== Редактирование заявки ===");
+            System.out.print("Введите id: ");
+            int id = Integer.parseInt(scanner.nextLine());
+            System.out.print("Введите имя: ");
+            String name = scanner.nextLine();
+            Item item = new Item(name);
+            if (tracker.replace(id, item)) {
+                System.out.println("Заявка изменена успешно.");
+            } else {
+                System.out.println("Ошибка замены заявки.");
+            }
         }
     }
 
