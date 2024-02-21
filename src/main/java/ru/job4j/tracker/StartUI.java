@@ -18,7 +18,8 @@ public class StartUI {
                 System.out.println("Добавленная заявка: " + item);
             } else if (select == 6) {
                 run = false;
-            }Item[] items = tracker.findAll();
+            }
+            Item[] items = tracker.findAll();
             if (items.length > 0) {
                 for (Item item : items) {
                     System.out.println(item);
