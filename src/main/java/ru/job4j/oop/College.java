@@ -9,4 +9,4 @@ public class College {
         Object object = new Object();
         object = freshman;
     }
-}
+ }
