@@ -10,6 +10,7 @@ public class StartUI {
         tracker.add(item);
         System.out.println("Добавленная заявка: " + item);
     }
+
     public void init(Input input, Tracker tracker) {
         boolean run = true;
         while (run) {
@@ -26,38 +27,14 @@ public class StartUI {
             } else if (select == 4) {
                 findItemById(input, tracker);
             }  else if (select == 5) {
-                FindItemByName(input, tracker);
+                findItemByName(input, tracker);
             } else if (select == 6) {
                 run = false;
             }
         }
     }
 
-    public static void FindItemByName(Input input, Tracker tracker) {
-        FindItemById(input, tracker);
-    }
-
-    public static void FindItemById(Input input, Tracker tracker) {
-        extracted3(input, tracker);
-    }
-
-    public static void findItemById(Input input, Tracker tracker) {
-        extracted2(input, tracker);
-    }
-
-    public static void deleteItem(Input input, Tracker tracker) {
-        extracted1(input, tracker);
-    }
-
-    public static void replaceItem(Input input, Tracker tracker) {
-        extracted(input, tracker);
-    }
-
-    public static void findAllItems(Tracker tracker) {
-        extracted(tracker);
-    }
-
-    public static void extracted3(Input input, Tracker tracker) {
+    public static void findItemByName(Input input, Tracker tracker) {
         System.out.println("=== Вывод заявок по имени ===");
         System.out.print("Введите имя: ");
         String name = input.askStr("Введите имя: ");
@@ -71,7 +48,7 @@ public class StartUI {
         }
     }
 
-    public static void extracted2(Input input, Tracker tracker) {
+    public static void findItemById(Input input, Tracker tracker) {
         System.out.println("=== Вывод заявки по id ===");
         System.out.print("Введите id: ");
         int id = input.askInt("Введите id: ");
@@ -83,7 +60,7 @@ public class StartUI {
         }
     }
 
-    public static void extracted1(Input input, Tracker tracker) {
+    public static void deleteItem(Input input, Tracker tracker) {
         System.out.println("=== Удаление заявки ===");
         int id = input.askInt("Введите id: ");
         Item item = tracker.findById(id);
@@ -91,7 +68,7 @@ public class StartUI {
         System.out.println(item != null ? "Заявка удалена успешно." : "Ошибка удаления заявки.");
     }
 
-    public static void extracted(Input input, Tracker tracker) {
+    public static void replaceItem(Input input, Tracker tracker) {
         System.out.println("=== Редактирование заявки ===");
         int id = input.askInt("Введите id: ");
         String name = input.askStr("Введите имя: ");
@@ -103,7 +80,7 @@ public class StartUI {
         }
     }
 
-    public static void extracted(Tracker tracker) {
+    public static void findAllItems(Tracker tracker) {
         System.out.println("=== Вывод всех заявок ===");
         Item[] items = tracker.findAll();
         if (items.length > 0) {
