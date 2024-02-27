@@ -7,7 +7,7 @@ public class MockInput implements Input {
     }
 
     @Override
-    public int askint(String question) {
+    public int askInt(String question) {
         return 0;
     }
 }
