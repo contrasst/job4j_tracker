@@ -8,7 +8,7 @@ public class VehicleMain {
         Train train = new Train();
 
         Vehicle[] vehicles = new Vehicle[] {plane, bus, train};
-        for(Vehicle object : vehicles) {
+        for (Vehicle object : vehicles) {
             object.move();
         }
     }
