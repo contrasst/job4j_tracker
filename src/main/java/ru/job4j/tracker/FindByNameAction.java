@@ -1,6 +1,6 @@
 package ru.job4j.tracker;
 
-public class FindByNameAction implements UserAction{
+public class FindByNameAction implements UserAction {
 
     @Override
     public String name() {
@@ -8,7 +8,7 @@ public class FindByNameAction implements UserAction{
     }
 
     @Override
-    public boolean execute (Input input, Tracker tracker) {
+    public boolean execute(Input input, Tracker tracker) {
         System.out.println("=== Вывод заявок по имени ===");
         System.out.print("Введите имя: ");
         String name = input.askStr("Введите имя: ");
