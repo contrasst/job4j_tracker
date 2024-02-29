@@ -1,9 +1,13 @@
-package ru.job4j.tracker;
+package ru.job4j.action;
 
-public class FindByIdAction implements UserAction {
+import ru.job4j.input.Input;
+import ru.job4j.output.Output;
+import ru.job4j.tracker.*;
+
+public class FindById implements User {
     private final Output output;
 
-    public FindByIdAction(Output output) {
+    public FindById(Output output) {
         this.output = output;
     }
 

@@ -1,9 +1,13 @@
-package ru.job4j.tracker;
+package ru.job4j.action;
 
-public class FindAllAction implements UserAction {
+import ru.job4j.input.Input;
+import ru.job4j.output.Output;
+import ru.job4j.tracker.*;
+
+public class FindAll implements User {
     private final Output output;
 
-    public FindAllAction(Output output) {
+    public FindAll(Output output) {
         this.output = output;
     }
 
