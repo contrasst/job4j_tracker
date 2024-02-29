@@ -47,8 +47,7 @@ class StartUITest {
         );
         UserAction[] actions = {
                 new DeleteAction(output),
-                new ExitAction(output)
-        };
+                new ExitAction(output)};
         new StartUI(output).init(input, tracker, actions);
         assertThat(tracker.findById(item.getId())).isNull();
     }
