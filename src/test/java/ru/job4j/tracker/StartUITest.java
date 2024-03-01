@@ -135,13 +135,13 @@ class StartUITest {
     }
 
     @Test
-    public void whenFindItemsByNameTestOutputIsSuccessfully() {
+    public void whenFindIByName() {
         Tracker tracker = new Tracker();
         Item first = tracker.add(new Item("first item"));
         Item second = tracker.add(new Item("first item"));
         Item third = tracker.add(new Item("another item"));
         Input input = new Mock(
-                new String[]{"0", String.valueOf(first.getName()), "1"}
+                new String[]{"0", first.getName(), "1"}
         );
         Output output = new Stub();
         User[] actions = new User[]{
