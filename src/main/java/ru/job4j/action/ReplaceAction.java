@@ -4,10 +4,10 @@ import ru.job4j.input.Input;
 import ru.job4j.output.Output;
 import ru.job4j.tracker.*;
 
-public class Replace implements User {
+public class ReplaceAction implements UserAction {
     private final Output output;
 
-    public Replace(Output output) {
+    public ReplaceAction(Output output) {
         this.output = output;
     }
 

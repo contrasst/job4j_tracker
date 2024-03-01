@@ -4,10 +4,10 @@ import ru.job4j.input.Input;
 import ru.job4j.output.Output;
 import ru.job4j.tracker.*;
 
-public class FindById implements User {
+public class FindByIdAction implements UserAction {
     private final Output output;
 
-    public FindById(Output output) {
+    public FindByIdAction(Output output) {
         this.output = output;
     }
 
