@@ -8,6 +8,7 @@ public class FindMaxLength {
             String element = shops[index];
             if (element != null) {
                 System.out.println(element + " has a size : " + element.length());
+                max = element.length();
             } else if (element.length() > max) {
                 max = element.length();
             }
