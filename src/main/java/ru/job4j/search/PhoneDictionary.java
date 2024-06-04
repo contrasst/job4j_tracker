@@ -9,10 +9,10 @@ public class PhoneDictionary {
         this.persons.add(person);
     }
 
-    public ArrayList<Person> find (String key) {
+    public ArrayList<Person> find(String key) {
         ArrayList<Person> result = new ArrayList<>();
-        for(Person value:persons) {
-            if(value.getPhone().contains(key) || value.getAddress().contains(key) || value.getName().contains(key) || value.getSurname().contains(key) ) {
+        for (Person value:persons) {
+            if (value.getPhone().contains(key) || value.getAddress().contains(key) || value.getName().contains(key) || value.getSurname().contains(key)) {
               result.add(value);
             }
         }
